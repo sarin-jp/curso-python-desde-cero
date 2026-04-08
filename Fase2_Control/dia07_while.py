@@ -93,7 +93,7 @@ print("JUEGO: ADIVINA EL NÚMERO")
 print("="*45)
 print("Estoy pensando en un número del 1 al 20...")
 
-numero_secreto = random.randint(1, 20)  # Número aleatorio entre 1 y 20
+numero_oculto = random.randint(1, 20)  # Número aleatorio entre 1 y 20
 intentos = 0
 max_intentos = 5
 
@@ -101,16 +101,16 @@ while intentos < max_intentos:
     intentos += 1
     intento = int(input(f"\nIntento {intentos}/{max_intentos}. Tu número: "))
 
-    if intento == numero_secreto:
-        print(f"🎉 ¡CORRECTO! Era el {numero_secreto}. Lo adivinaste en {intentos} intentos.")
+    if intento == numero_oculto:
+        print(f"🎉 ¡CORRECTO! Era el {numero_oculto}. Lo adivinaste en {intentos} intentos.")
         break
-    elif intento < numero_secreto:
+    elif intento < numero_oculto:
         print("📈 Demasiado bajo, prueba con uno mayor.")
     else:
         print("📉 Demasiado alto, prueba con uno menor.")
 else:
     # Este else se ejecuta cuando el while termina SIN que se ejecute break
-    print(f"\n😔 Se acabaron los intentos. El número era {numero_secreto}.")
+    print(f"\n😔 Se acabaron los intentos. El número era {numero_oculto}.")
 
 # ============================================================
 # SECCIÓN 5: MENÚ INTERACTIVO
