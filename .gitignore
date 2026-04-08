@@ -1,0 +1,33 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+
+# Generated data files
+*.db
+*.sqlite
+tareas.json
+biblioteca.json
+paises_demo.json
+usuarios_api.json
+datos_usuarios_*.json
+posts_usuario_*.json
+mi_diario.txt
+reporte_ventas.txt
+
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Temp files
+*.tmp
+*.bak
